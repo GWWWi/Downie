@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Send to DownieWin",
+  "version": "1.0.0",
+  "description": "Send the current page / video / link URL to DownieWin with one click or right-click.",
+  "permissions": ["activeTab", "contextMenus", "scripting"],
+  "host_permissions": ["http://127.0.0.1:7654/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Send to DownieWin"
+  }
+}
